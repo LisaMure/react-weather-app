@@ -1,25 +1,28 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Date from "./Date";
+import EnterCity from "./EnterCity";
+import Forecast from "./Forecast";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Test <code>Code</code>.
-        </p>
+      <div className="container">
+        <p className="forecast">Weather forecast</p>
+        <Date />
+        <EnterCity />
+        <Forecast />
+      </div>
+      <div className="github">
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/LisaMure/weather-app"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
+          className="github-link"
         >
-          Learn React
+          Open-source code{" "}
         </a>
-      </header>
+        by Melisa Mureriwa
+      </div>
     </div>
   );
 }
-
-export default App;

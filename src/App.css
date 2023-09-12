@@ -1,38 +1,190 @@
 .App {
-  text-align: center;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: left;
+  font-size: 40px;
+  margin: 10px 5px 5px 5px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
+  font-size: 16px;
+  margin-left: -25px;
+  margin-top: 1px;
+  padding: 0;
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container {
+  max-width: 585px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: 2px solid rgb(100, 94, 116);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  font-family: "Nunito", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
+}
+
+.forecast {
+  float: left;
+  margin-top: 25px;
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: rgb(44, 44, 63);
+}
+
+.date {
+  position: relative;
+  top: 55px;
+  left: -157px;
+  font-size: 13px;
+}
+
+.enter-city,
+.search-btn {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+  transition: all 200ms ease-in-out;
+}
+
+.enter-city {
+  margin-left: 140px;
+  margin-top: -10px;
+  padding: 3px 12px;
+  border-radius: 10px;
+  border: 1px solid rgb(44, 44, 63);
+  background: transparent;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 2px rgb(44, 44, 63);
+}
+
+.enter-city:hover {
+  background: white;
+}
+
+.search-btn {
+  border: transparent;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  font-size: 25px;
+}
+
+.current-location-btn {
+  position: relative;
+  top: -15px;
+  margin: 15px 360px 10px;
+  max-width: 150px;
+  border-radius: 10px;
+  border: 1px solid rgb(44, 44, 63);
+  background: rgb(29, 97, 136);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  padding: 3px 12px;
+}
+
+.current-location-btn:hover {
+  color: rgb(29, 97, 136);
+  background: white;
+}
+
+.main-forecast-row {
+  margin-bottom: 15px;
+}
+
+.main-forecast-frame {
+  border: 1px solid grey;
+  width: 548px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: white;
+  padding-top: 20px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+.main-temp {
+  text-align: left;
+  margin-left: 5px;
+  margin-top: -10px;
+  font-size: 70px;
+  font-weight: 250;
+}
+
+.unit {
+  font-size: 27px;
+  position: relative;
+  top: -30px;
+  left: -16px;
+}
+
+.main-weather-icon {
+  display: block;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -16px;
 }
 
-.App-link {
-  color: #61dafb;
+.wind-speed {
+  text-transform: lowercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.five-day-forecast {
+  color: rgb(29, 97, 136);
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgb(103, 103, 134);
+  text-transform: uppercase;
+}
+
+.icons {
+  display: block;
+  margin: 0 auto;
+  margin-left: -12px;
+}
+
+.forecast-temp {
+  text-align: center;
+  word-spacing: 5px;
+  font-size: 15px;
+}
+
+.card {
+  box-shadow: 3px 3px 3px gray;
+  color: rgb(44, 44, 63);
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.github {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.github a {
+  text-decoration: none;
 }
