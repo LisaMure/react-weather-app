@@ -12,16 +12,25 @@ export default function App() {
         <EnterCity />
         <Forecast />
       </div>
-      <div className="github">
+      <div className="github mt-3">
+        This project was coded by{" "}
+        <a
+          href="https://melisa-shecodes-portfolio.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="github-link"
+        >
+          Melisa Mureriwa
+        </a>{" "}
+        and it is open-sourced on{" "}
         <a
           href="https://github.com/LisaMure/react-weather-app"
           target="_blank"
           rel="noreferrer"
           className="github-link"
         >
-          Open-source code{" "}
+          Github{" "}
         </a>
-        by Melisa Mureriwa
       </div>
     </div>
   );
