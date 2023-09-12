@@ -37,18 +37,14 @@ li {
 }
 
 .forecast {
-  float: left;
   margin-top: 25px;
-  font-size: 20px;
   margin-bottom: 0;
+  font-size: 20px;
   font-weight: bold;
   color: rgb(44, 44, 63);
 }
 
 .date {
-  position: relative;
-  top: 55px;
-  left: -157px;
   font-size: 13px;
 }
 
@@ -56,13 +52,11 @@ li {
 .search-btn {
   display: inline-block;
   position: relative;
-  top: -12px;
   transition: all 200ms ease-in-out;
 }
 
 .enter-city {
-  margin-left: 140px;
-  margin-top: -10px;
+  margin-top: 25px;
   padding: 3px 12px;
   border-radius: 10px;
   border: 1px solid rgb(44, 44, 63);
@@ -87,13 +81,14 @@ li {
 }
 
 .current-location-btn {
-  position: relative;
-  top: -15px;
-  margin: 15px 360px 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 62px;
   max-width: 150px;
   border-radius: 10px;
   border: 1px solid rgb(44, 44, 63);
   background: rgb(29, 97, 136);
+  color: white;
   transition: all 200ms ease-in-out;
   cursor: pointer;
   padding: 3px 12px;
@@ -102,6 +97,7 @@ li {
 .current-location-btn:hover {
   color: rgb(29, 97, 136);
   background: white;
+  border: 1px solid rgb(29, 97, 136);
 }
 
 .main-forecast-row {
@@ -135,9 +131,7 @@ li {
 }
 
 .main-weather-icon {
-  display: block;
-  align-items: center;
-  margin-top: -16px;
+  margin: 0px auto;
 }
 
 .wind-speed {
