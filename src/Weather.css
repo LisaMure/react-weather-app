@@ -125,9 +125,9 @@ li {
   left: -16px;
 }
 
-.main-weather-icon {
+.main-weather-icon canvas {
+  display: block;
   margin: 0px auto;
-  margin-top: -15px;
 }
 
 .wind-speed {
