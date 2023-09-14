@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Weather.css";
 import FiveDayForecast from "./FiveDayForecast";
-import axios from "axios";
+import NewDate from "./NewDate";
 
 export default function Weather(props) {
   const [forecast, setForecast] = useState({ loaded: false });
@@ -11,7 +12,7 @@ export default function Weather(props) {
     setForecast({
       loaded: true,
       city: response.data.name,
-      date: "Thursday, 06:30",
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -28,7 +29,7 @@ export default function Weather(props) {
             <div className="col-sm-6">
               <p className="forecast">Weather forecast</p>
               <p className="date">
-                Last updated <span>{forecast.date}</span>
+                Last updated <NewDate date={forecast.date} />
               </p>
             </div>
             <div className="City col-sm-6">
