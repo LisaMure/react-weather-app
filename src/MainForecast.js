@@ -7,7 +7,7 @@ export default function MainForecast(props) {
       <div className="Forecast row main-forecast-frame">
         <h1>{props.weatherData.city}</h1>
 
-        <div className="col-sm-4">
+        <div className="temperature col-sm-4">
           <div className="main-temp">
             <span>{Math.round(props.weatherData.temperature)} </span>
             <span className="unit">°C</span>
@@ -17,7 +17,7 @@ export default function MainForecast(props) {
         <div className="col-sm-4 main-weather-icon pt-1">
           <WeatherIcon code={props.weatherData.icon} size={70} />
         </div>
-        <div className="col-sm-4">
+        <div className="description col-sm-4">
           <ul>
             <li className="weather-description">
               {props.weatherData.description}

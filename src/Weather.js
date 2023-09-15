@@ -60,7 +60,7 @@ export default function Weather(props) {
                   onChange={handleCityInput}
                 />
                 <button className="search-btn" type="submit">
-                  🔍
+                  <i className="fa-solid fa-magnifying-glass fa-xl"></i>
                 </button>
               </form>
             </div>

@@ -51,7 +51,8 @@ li {
 }
 
 .enter-city {
-  margin-top: 25px;
+  max-width: 250px;
+  margin-top: 30px;
   padding: 3px 12px;
   border-radius: 10px;
   border: 1px solid rgb(44, 44, 63);
@@ -71,32 +72,12 @@ li {
   cursor: pointer;
 }
 
+.search-btn .fa-magnifying-glass {
+  color: rgb(103, 103, 134);
+}
+
 .search-btn:hover {
   font-size: 25px;
-}
-
-.current-location-btn {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 62px;
-  max-width: 150px;
-  border-radius: 10px;
-  border: 1px solid rgb(44, 44, 63);
-  background: rgb(29, 97, 136);
-  color: white;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-  padding: 3px 12px;
-}
-
-.current-location-btn:hover {
-  color: rgb(29, 97, 136);
-  background: white;
-  border: 1px solid rgb(29, 97, 136);
-}
-
-.main-forecast-row {
-  margin-bottom: 15px;
 }
 
 .main-forecast-frame {
@@ -180,4 +161,78 @@ li {
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .App .container {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .App .forecast {
+    font-size: 25px;
+    text-align: center;
+  }
+  .App .date {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .enter-city {
+    width: 250px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .MainForecast .main-forecast-frame {
+    width: 98%;
+    padding-bottom: 15px;
+  }
+
+  .main-forecast-frame .col-sm-4,
+  .main-forecast-frame h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-forecast-frame h1 {
+    font-size: 42px;
+  }
+  .main-weather-icon canvas {
+    margin-bottom: 25px;
+  }
+
+  .main-forecast-frame .description {
+    border: 1px solid gray;
+    margin: 10px auto;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 85%;
+    box-shadow: 2px 2px 2px rgb(179, 191, 198);
+  }
+
+  .FiveDayForecast .col-sm-3 {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  .five-day-forecast {
+    font-size: 18px;
+  }
+
+  .WeatherForecastDay .card-title {
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
 }
