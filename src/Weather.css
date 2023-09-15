@@ -174,3 +174,10 @@ li {
   flex: 0 0 auto;
   width: 20%;
 }
+
+.loader {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}

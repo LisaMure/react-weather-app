@@ -4,6 +4,7 @@ import "./Weather.css";
 import MainForecast from "./MainForecast";
 import NewDate from "./NewDate";
 import FiveDayForecast from "./FiveDayForecast";
+import { Oval } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [forecast, setForecast] = useState({ loaded: false });
@@ -62,9 +63,6 @@ export default function Weather(props) {
                   🔍
                 </button>
               </form>
-              <button className="btn w-100 current-location-btn">
-                Current Location
-              </button>
             </div>
           </div>
           <MainForecast weatherData={forecast} />
@@ -75,6 +73,19 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading..";
+    return (
+      <div className="loader">
+        <Oval
+          height={90}
+          width={90}
+          color="rgb(29, 97, 136)"
+          visible={true}
+          ariaLabel="oval-loading"
+          secondaryColor="#rgb(29, 97, 136)"
+          strokeWidth={4}
+          strokeWidthSecondary={4}
+        />
+      </div>
+    );
   }
 }
