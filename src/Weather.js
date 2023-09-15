@@ -21,6 +21,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      coordinates: response.data.coord,
     });
   }
 
@@ -70,7 +71,7 @@ export default function Weather(props) {
           </div>
           <MainForecast weatherData={forecast} />
           <hr />
-          <FiveDayForecast />
+          <FiveDayForecast coordinates={forecast.coordinates} />
         </div>
       </div>
     );

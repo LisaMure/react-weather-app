@@ -4,7 +4,7 @@ import Weather from "./Weather";
 export default function App() {
   return (
     <div className="App">
-      <Weather defaultCity="Harare" />;
+      <Weather defaultCity="Harare" />
       <div className="github mt-3">
         This project was coded by{" "}
         <a
